@@ -2,7 +2,7 @@
 import React from "react";
 import { HeroParallax } from "../acernity/hero-parallax";
 
-export function HeroParallaxDemo() {
+export function Hero() {
   return <HeroParallax products={products} />;
 }
 export const products = [
