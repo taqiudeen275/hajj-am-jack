@@ -38,7 +38,7 @@ export function NavigationBar() {
     {
       title: "Aceternity UI",
       icon: (
-        <Image
+        <img
           src="https://assets.aceternity.com/logo-dark.png"
           width={20}
           height={20}
@@ -71,7 +71,7 @@ export function NavigationBar() {
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="fixed sm:top-6 sm:right-4 z-50 bottom-20 right-2">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}

@@ -57,23 +57,27 @@ const FloatingDockMobile = ({
                 animate={{
                   opacity: 1,
                   y: 0,
+                  x: -130,
                 }}
                 exit={{
                   opacity: 0,
                   y: 10,
+                  x: 0,
                   transition: {
                     delay: idx * 0.05,
                   },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                className="flex items-center flex-wrap w-max gap-2 bg-white/60 backdrop-blur-sm pl-1 pr-4 py-1 rounded-full"
               >
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
+                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 shadow flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
+                <div>{item.title}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -102,7 +106,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50/60 backdrop-blur-sm dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -167,13 +171,15 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href}>
+    <Link href={href}
+    className="flex w-max items-center gap-2"
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 shadow flex items-center justify-center relative"
       >
         <AnimatePresence>
           {hovered && (
@@ -194,6 +200,7 @@ function IconContainer({
           {icon}
         </motion.div>
       </motion.div>
+      <div>{title}</div>
     </Link>
   );
 }
