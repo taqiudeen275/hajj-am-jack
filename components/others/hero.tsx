@@ -7,96 +7,69 @@ export function Hero() {
 }
 export const products = [
   {
-    title: "Moonbeam",
+    title: "Cashew nuts",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: "/background/cashew.jpg",
   },
   {
-    title: "Cursor",
+    title: "Cashew nuts",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    thumbnail: "/background/cashew2.jpg",
   },
   {
-    title: "Rogue",
+    title: "Groundnut",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    thumbnail: "/background/groundnut.jpg",
   },
   {
-    title: "Editrix AI",
+    title: "Maize",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    thumbnail: "/background/maize.jpg",
   },
   {
-    title: "Pixel Perfect",
+    title: "Cowpea",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    thumbnail: "/background/Pigeonpea.jpg",
   },
   {
-    title: "Aceternity UI",
+    title: "Pigeon pea",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    thumbnail: "/background/Pigeonpea2.jpg",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "Sheanut",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    thumbnail: "/background/sheanut.jpg",
   },
   {
-    title: "SmartBridge",
+    title: "Sheanut",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    thumbnail: "/background/sheanut2.jpg",
   },
   {
-    title: "Renderwork Studio",
+    title: "Soybeans",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    thumbnail: "/background/soybeans.jpg",
   },
   {
-    title: "Golden Bells Academy",
+    title: "Soybeans",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    thumbnail: "/background/soybeans2.jpg",
   },
   {
-    title: "Invoker Labs",
+    title: "Soybeans",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    thumbnail: "/background/soybeans2.jpg",
   },
   {
-    title: "E Free Invoice",
+    title: "Soybeans",
     link: "#",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    thumbnail: "/background/soybeans2.jpg",
   },
+  {
+    title: "Soybeans",
+    link: "#",
+    thumbnail: "/background/soybeans2.jpg",
+  },
+  
 ];

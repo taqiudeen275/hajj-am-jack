@@ -1,12 +1,11 @@
 import React from "react";
 // import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  IconBrandFacebook,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconImageInPicture,
+  IconInfoCircle,
+  IconPhone,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { FloatingDock } from "../acernity/floating-dock";
@@ -18,57 +17,39 @@ export function NavigationBar() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
-      title: "Products",
+      title: "About",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/about",
+    },
+    {
+      title: "Gallery",
+      icon: (
+        <IconImageInPicture className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
-      title: "Components",
+      title: "Contact",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone />
       ),
       href: "#",
     },
+  
     {
-      title: "Aceternity UI",
+      title: "Facebook",
       icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+ 
   ];
   return (
     <div className="fixed sm:top-6 sm:right-4 z-50 bottom-20 right-2">
