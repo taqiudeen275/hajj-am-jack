@@ -56,7 +56,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/api/placeholder/1920/600" 
+            src="/background/maize.jpg" 
             alt="Agricultural fields"
             width={1920}
             height={600}
@@ -85,7 +85,7 @@ export default function AboutPage() {
       </section>
       
       {/* Our Story Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30 px-4">
         <div className="container mx-auto">
           <div className="grid gap-12 md:grid-cols-2 lg:gap-20">
             <motion.div
@@ -269,10 +269,10 @@ export default function AboutPage() {
             variants={staggerContainer}
             className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
           >
-            <StatCard number="10+" text="Years of Experience" />
-            <StatCard number="5,000+" text="Farmer Partners" />
-            <StatCard number="12+" text="Countries Served" />
-            <StatCard number="25,000+" text="Tons Supplied Annually" />
+            <StatCard number="5+" text="Years of Experience" />
+            <StatCard number="50+" text="Farmer Partners" />
+            <StatCard number="10+" text="Retailers Served" />
+            <StatCard number="2,500+" text="Tons Supplied Annually" />
           </motion.div>
         </div>
       </section>

@@ -39,7 +39,7 @@ export function NavigationBar() {
       icon: (
         <IconPhone />
       ),
-      href: "#",
+      href: "/contact",
     },
   
     {
