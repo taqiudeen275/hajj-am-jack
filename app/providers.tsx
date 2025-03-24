@@ -7,10 +7,10 @@ interface ProvidersProps {
 
 const Providers: React.FC<ProvidersProps> = ({ children }) => {
     return (
-        <div>
+        <>
             <NavigationBar />
             {children}
-        </div>
+        </>
     );
 };
 

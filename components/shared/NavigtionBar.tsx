@@ -1,6 +1,7 @@
 import React from "react";
 // import { FloatingDock } from "@/components/ui/floating-dock";
 import {
+  IconBrandBlogger,
   IconBrandFacebook,
   IconHome,
   IconImageInPicture,
@@ -33,7 +34,7 @@ export function NavigationBar() {
       icon: (
         <ImageIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/gallery",
     },
     {
       title: "Contact",
@@ -41,6 +42,13 @@ export function NavigationBar() {
         <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/contact",
+    },
+    {
+      title: "Blog",
+      icon: (
+        <IconBrandBlogger className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/blog",
     },
   
     {

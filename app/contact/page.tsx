@@ -13,7 +13,6 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 
 export default function ContactPage() {
   const [mapLoaded, setMapLoaded] = useState(false);
