@@ -9,6 +9,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { FloatingDock } from "../acernity/floating-dock";
+import { ImageIcon } from "lucide-react";
 
 export function NavigationBar() {
   const links = [
@@ -30,14 +31,14 @@ export function NavigationBar() {
     {
       title: "Gallery",
       icon: (
-        <IconImageInPicture className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <ImageIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
       title: "Contact",
       icon: (
-        <IconPhone />
+        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/contact",
     },

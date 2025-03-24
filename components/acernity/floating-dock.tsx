@@ -6,6 +6,7 @@
 
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { MenuIcon } from "lucide-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -68,16 +69,20 @@ const FloatingDockMobile = ({
                   },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-                className="flex items-center flex-wrap w-max gap-2 bg-white/60 backdrop-blur-sm pl-1 pr-4 py-1 rounded-full"
+                className="flex items-center flex-wrap w-max gap-2 bg-background/60 border backdrop-blur-sm pl-1 pr-4 py-1 rounded-full"
+                onClick={() => setOpen(!open)}
               >
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 shadow flex items-center justify-center"
+                  className="h-10 w-10 rounded-full bg-accent/50 dark:bg-neutral-900 shadow flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
+                <Link href={item.href}
+                  key={item.title} >
                 <div>{item.title}</div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -85,9 +90,9 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
+        className="h-12 w-12 rounded-full bg-background border shadow-xl dark:bg-neutral-800 flex items-center justify-center"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <MenuIcon className="h-6 w-6 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );
@@ -106,7 +111,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50/60 backdrop-blur-sm dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-background/60 border backdrop-blur-sm dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -179,7 +184,7 @@ function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 shadow flex items-center justify-center relative"
+        className="aspect-square rounded-full bg-accent/50 dark:bg-neutral-800  flex items-center justify-center relative"
       >
         <AnimatePresence>
           {hovered && (
