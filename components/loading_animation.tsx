@@ -6,7 +6,7 @@ const LoadingAnimation = () => {
     <div className="flex items-center justify-center h-full">
       <div className="flex space-x-2">
         <motion.div
-          className="w-4 h-4 bg-blue-600 rounded-full"
+          className="w-4 h-4 bg-primary rounded-full"
           animate={{
             scale: [1, 1.5, 1],
             opacity: [1, 0.5, 1]
@@ -18,7 +18,7 @@ const LoadingAnimation = () => {
           }}
         />
         <motion.div
-          className="w-4 h-4 bg-blue-600 rounded-full"
+          className="w-4 h-4 bg-primary rounded-full"
           animate={{
             scale: [1, 1.5, 1],
             opacity: [1, 0.5, 1]
@@ -31,7 +31,7 @@ const LoadingAnimation = () => {
           }}
         />
         <motion.div
-          className="w-4 h-4 bg-blue-600 rounded-full"
+          className="w-4 h-4 bg-primary rounded-full"
           animate={{
             scale: [1, 1.5, 1],
             opacity: [1, 0.5, 1]
