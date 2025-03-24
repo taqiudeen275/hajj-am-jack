@@ -240,21 +240,10 @@ export default function AboutPage() {
             <TeamMember
               name="A.M. Jack"
               position="Founder & CEO"
-              imageSrc="/api/placeholder/300/300"
-              bio="With over 20 years of experience in agricultural trade, our founder has built Hajj A.M JACK FI COMPANY LTD on the principles of quality and integrity."
+              imageSrc="/background/ceo.jpg"
+              bio="With over 10 years of experience in agricultural trade, our founder has built Hajj A.M JACK FI COMPANY LTD on the principles of quality and integrity."
             />
-            <TeamMember
-              name="Sarah Mensah"
-              position="Operations Director"
-              imageSrc="/api/placeholder/300/300"
-              bio="Sarah brings extensive expertise in supply chain management and ensures smooth operations from farm to delivery."
-            />
-            <TeamMember
-              name="Ibrahim Osei"
-              position="Agricultural Specialist"
-              imageSrc="/api/placeholder/300/300"
-              bio="Ibrahim works directly with our farming partners to implement best practices and maintain our high quality standards."
-            />
+            
           </motion.div>
         </div>
       </section>

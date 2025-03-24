@@ -52,7 +52,7 @@ export function NavigationBar() {
  
   ];
   return (
-    <div className="fixed sm:top-6 sm:right-4 z-50 bottom-20 right-2">
+    <div className="fixed sm:top-6 sm:right-4 bottom-20 right-2 z-50  h-max">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
