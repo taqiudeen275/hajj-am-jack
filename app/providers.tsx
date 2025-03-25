@@ -1,6 +1,7 @@
 "use client";
 import CompanyLogo from "@/components/shared/Logo";
 import { NavigationBar } from "@/components/shared/NavigtionBar";
+import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import React from "react";
 interface ProvidersProps {
@@ -17,7 +18,14 @@ const Providers: React.FC<ProvidersProps> = ({ children }) => {
           textClassName="text-primary"
         />
       </Link>
-      {children}
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       <footer className="py-4">
         <p className="text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Hajj A.M JACK FI Company Ltd. All rights reserved | Developed By ATS Tech
