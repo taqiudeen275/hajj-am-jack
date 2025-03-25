@@ -20,7 +20,7 @@ const Providers: React.FC<ProvidersProps> = ({ children }) => {
       {children}
       <footer className="py-4">
         <p className="text-center text-sm text-gray-500">
-        © 2024 Hajj A.M JACK FI Company Ltd. All rights reserved | Developed By ATS Tech
+          © {new Date().getFullYear()} Hajj A.M JACK FI Company Ltd. All rights reserved | Developed By ATS Tech
         </p>
       </footer>
     </>
