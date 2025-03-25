@@ -11,7 +11,7 @@ const Providers: React.FC<ProvidersProps> = ({ children }) => {
   return (
     <>
       <NavigationBar />
-      <Link href={"/"} className="fixed top-6 left-10 z-50 w-ma">
+      <Link href={"/"} className="fixed top-6 left-10 z-40 w-max h-max">
         <CompanyLogo
           className="max-w-xs mx-auto"
           textClassName="text-primary"
