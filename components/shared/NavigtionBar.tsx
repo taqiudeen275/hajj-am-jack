@@ -4,15 +4,11 @@ import {
   IconBrandBlogger,
   IconBrandFacebook,
   IconHome,
-  IconImageInPicture,
   IconInfoCircle,
   IconPhone,
 } from "@tabler/icons-react";
-import Image from "next/image";
 import { FloatingDock } from "../acernity/floating-dock";
 import { ImageIcon } from "lucide-react";
-import { title } from "process";
-import { ModeToggle } from "../theme-toggler";
 
 export function NavigationBar() {
   const links = [
@@ -60,11 +56,6 @@ export function NavigationBar() {
       ),
       href: "#",
     },
-    {
-      title: "Theme",
-      icon: (<ModeToggle />),
-      href: "#",
-    }
   ];
   return (
     <div className="fixed sm:top-6 sm:right-4 bottom-20 right-2 z-50  h-max">
