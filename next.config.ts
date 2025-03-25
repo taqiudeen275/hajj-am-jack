@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   
       {
         protocol: 'https',
-        hostname: 'adomex.pockethost.io',
+        hostname: 'poll-pulse.pockethost.io',
         port: '',
         pathname: '/api/files/**',
       },
