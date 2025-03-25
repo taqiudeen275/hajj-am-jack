@@ -286,9 +286,7 @@ export default function AboutPage() {
               <a href="/contact" className="px-6 py-3 text-lg font-medium text-primary-foreground bg-primary rounded-lg hover:bg-primary/90 transition-colors">
                 Contact Us
               </a>
-              <a href="/products" className="px-6 py-3 text-lg font-medium border rounded-lg border-primary text-primary hover:bg-primary/10 transition-colors">
-                Explore Our Products
-              </a>
+            
             </div>
           </motion.div>
         </div>
