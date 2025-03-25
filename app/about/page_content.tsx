@@ -116,12 +116,12 @@ export default function AboutPageContent() {
               variants={fadeIn}
               className="relative min-h-[400px]"
             >
-              <Image
+              {/* <Image
                 src="/api/placeholder/800/600" 
                 alt="Hajj A.M JACK FI company history"
                 fill
                 className="object-cover rounded-2xl"
-              />
+              /> */}
             </motion.div>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function AboutPageContent() {
             className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
           >
             <TeamMember
-              name="A.M. Jack"
+              name="HAJJ A.MANAN."
               position="Founder & CEO"
               imageSrc="/background/ceo.jpg"
               bio="With over 10 years of experience in agricultural trade, our founder has built Hajj A.M JACK FI COMPANY LTD on the principles of quality and integrity."
@@ -329,14 +329,14 @@ interface TeamMemberProps {
 const TeamMember = ({ name, position, imageSrc, bio }: TeamMemberProps) => {
   return (
     <motion.div variants={fadeIn} className="overflow-hidden rounded-xl bg-card shadow-sm">
-      <div className="relative h-64">
-        <Image
+      {/* <div className="relative h-64"> */}
+        {/* <Image
           src={imageSrc}
           alt={name}
           fill
           className="object-cover"
-        />
-      </div>
+        /> */}
+      {/* </div> */}
       <div className="p-6">
         <h3 className="mb-1 text-xl font-bold text-foreground">{name}</h3>
         <p className="mb-4 text-primary">{position}</p>

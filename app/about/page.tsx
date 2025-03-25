@@ -10,7 +10,9 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
+    <>
    <AboutPageContent />
+    </>
   )
 }
 
