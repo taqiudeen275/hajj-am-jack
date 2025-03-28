@@ -54,7 +54,7 @@ export function NavigationBar() {
       icon: (
         <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=61574523643256&mibextid=ZbWKwL",
     },
   ];
   return (

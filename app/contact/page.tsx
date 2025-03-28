@@ -58,7 +58,7 @@ const fadeIn = {
     { number: "0209711112", whatsapp: "233209711112" },
     { number: "0266624277", whatsapp: "233266624277" }
   ];
-  const facebookLink = "#";
+  const facebookLink = "https://www.facebook.com/profile.php?id=61574523643256&mibextid=ZbWKwL";
 
   // Google Maps integration
   useEffect(() => {
